@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4e657d6394417f042a5829c869ee4dde {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4e657d6394417f042a5829c869ee4dde" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4e657d6394417f042a5829c869ee4dde = L.map(
+                "map_4e657d6394417f042a5829c869ee4dde",
+                {
+                    center: [23.129210544390933, 79.87486749562004],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_58734424cc44661b2eb7731832bb6068 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_58734424cc44661b2eb7731832bb6068.addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var poly_line_e152f43a4e8a0ea55896a8fdd83b84a6 = L.polyline(
+                [[23.129210544390933, 79.87486749562004], [23.130691256817723, 79.88098490914587]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_e152f43a4e8a0ea55896a8fdd83b84a6.bindTooltip(
+                `<div>
+                     Gyan Ganga  → IT Park: 0.65 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5e440a2f96f093825e765a414ea76db4 = L.polyline(
+                [[23.130691256817723, 79.88098490914587], [23.12436219371275, 79.92711537185421]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_5e440a2f96f093825e765a414ea76db4.bindTooltip(
+                `<div>
+                     IT Park → South Avenue Mall: 4.78 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2a56528be1c261905215334b262c9e3a = L.polyline(
+                [[23.12436219371275, 79.92711537185421], [23.10602802899691, 79.9308900895927]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_2a56528be1c261905215334b262c9e3a.bindTooltip(
+                `<div>
+                     South Avenue Mall → Jilehri Ghat: 2.07 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_30c5d7b526ff71c33cba61b4317cfef5 = L.polyline(
+                [[23.10602802899691, 79.9308900895927], [23.124141962403403, 79.9682864476029]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_30c5d7b526ff71c33cba61b4317cfef5.bindTooltip(
+                `<div>
+                     Jilehri Ghat → Vijan Mahal: 4.32 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_068f5b524dd8794141cf7387b4fa983e = L.polyline(
+                [[23.124141962403403, 79.9682864476029], [23.154927698696685, 79.94746407438113]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_068f5b524dd8794141cf7387b4fa983e.bindTooltip(
+                `<div>
+                     Vijan Mahal → Taigor Garden: 4.02 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c620ae3bdd30faea8340b1d76a020ad8 = L.polyline(
+                [[23.154927698696685, 79.94746407438113], [23.147490024017742, 79.93669564088009]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_c620ae3bdd30faea8340b1d76a020ad8.bindTooltip(
+                `<div>
+                     Taigor Garden → Katanga: 1.38 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_532189515a17e4719f7278dfa282162a = L.polyline(
+                [[23.147490024017742, 79.93669564088009], [23.154417397847464, 79.93751060921963]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_532189515a17e4719f7278dfa282162a.bindTooltip(
+                `<div>
+                     Katanga → Bhandari Hospital: 0.77 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d47531ca69057bae2673952264de8227 = L.polyline(
+                [[23.154417397847464, 79.93751060921963], [23.168089258333325, 79.92615686429417]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_d47531ca69057bae2673952264de8227.bindTooltip(
+                `<div>
+                     Bhandari Hospital → Vishal Mega Mart: 1.91 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_2681547cb361d7a83cef1054ee2fdd34 = L.polyline(
+                [[23.168089258333325, 79.92615686429417], [23.176772012175384, 79.94621370793112]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_2681547cb361d7a83cef1054ee2fdd34.bindTooltip(
+                `<div>
+                     Vishal Mega Mart → Ghamapur: 2.27 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_87adbc38d04744e4e3d1906b780768c9 = L.polyline(
+                [[23.176772012175384, 79.94621370793112], [23.17921604273832, 79.96113034933958]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_87adbc38d04744e4e3d1906b780768c9.bindTooltip(
+                `<div>
+                     Ghamapur → Kanchghar: 1.55 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cde9c80d9e5de5198240cddd7be42d42 = L.polyline(
+                [[23.17921604273832, 79.96113034933958], [23.182227402320635, 79.96992116752702]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_cde9c80d9e5de5198240cddd7be42d42.bindTooltip(
+                `<div>
+                     Kanchghar → Satpula: 0.96 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_55b51423b2b743bad3509d0996b82bf3 = L.polyline(
+                [[23.182227402320635, 79.96992116752702], [23.215416062799324, 79.96091639127673]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_55b51423b2b743bad3509d0996b82bf3.bindTooltip(
+                `<div>
+                     Satpula → JNKVV: 3.79 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_44b9e63b4ea2c6fc4e4382b0a9a16a36 = L.polyline(
+                [[23.215416062799324, 79.96091639127673], [23.233261414367547, 79.96757010946145]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_44b9e63b4ea2c6fc4e4382b0a9a16a36.bindTooltip(
+                `<div>
+                     JNKVV → Kharpatwar: 2.09 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5a1d124a2bd42cc14fd561456d3d47fb = L.polyline(
+                [[23.233261414367547, 79.96757010946145], [23.221219560142476, 79.89696799909981]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_5a1d124a2bd42cc14fd561456d3d47fb.bindTooltip(
+                `<div>
+                     Kharpatwar → TATA motors SC: 7.35 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8fc645266419b0f840dc73b48448d88f = L.polyline(
+                [[23.221219560142476, 79.89696799909981], [23.20178346285742, 79.91282550434059]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_8fc645266419b0f840dc73b48448d88f.bindTooltip(
+                `<div>
+                     TATA motors SC → Shri Ram College: 2.70 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_231e41261c49555d2c61251c7316b6bd = L.polyline(
+                [[23.20178346285742, 79.91282550434059], [23.189956346167065, 79.89816563482343]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_231e41261c49555d2c61251c7316b6bd.bindTooltip(
+                `<div>
+                     Shri Ram College → Kachnar City: 1.99 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_305760139686e43122825eb9c6acda37 = L.polyline(
+                [[23.189956346167065, 79.89816563482343], [23.20219982690002, 79.88304505674881]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_305760139686e43122825eb9c6acda37.bindTooltip(
+                `<div>
+                     Kachnar City → Global College: 2.06 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b5af15e5ea45c37526a6ac1a68561971 = L.polyline(
+                [[23.20219982690002, 79.88304505674881], [23.156578080577397, 79.84123457172913]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_b5af15e5ea45c37526a6ac1a68561971.bindTooltip(
+                `<div>
+                     Global College → Sea World: 6.62 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_1b6a34692988f8a468cfdbd0fc0a4d80 = L.polyline(
+                [[23.156578080577397, 79.84123457172913], [23.155569970495215, 79.87006914155117]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_1b6a34692988f8a468cfdbd0fc0a4d80.bindTooltip(
+                `<div>
+                     Sea World → Machaan: 2.95 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_745a29788ddcf77b96ce4f59d7a3c89e = L.polyline(
+                [[23.155569970495215, 79.87006914155117], [23.14797607411163, 79.88351430957519]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_745a29788ddcf77b96ce4f59d7a3c89e.bindTooltip(
+                `<div>
+                     Machaan → Apex Hospital: 1.61 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_cf60c7f71942c0b15633a84b83380337 = L.polyline(
+                [[23.14797607411163, 79.88351430957519], [23.129210544390933, 79.87486749562004]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4.5}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            poly_line_cf60c7f71942c0b15633a84b83380337.bindTooltip(
+                `<div>
+                     Apex Hospital → Gyan Ganga : 2.26 km
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_68fe4d2968468a67cd53f614961f8d36 = L.marker(
+                [23.129210544390933, 79.87486749562004],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_b7abfa8d8e211bfdf024506c648c328c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75f306e6c21920cc37cead56a9b58302 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_40a0e2646c57bd68ffc0abec1946b5c2 = $(`<div id="html_40a0e2646c57bd68ffc0abec1946b5c2" style="width: 100.0%; height: 100.0%;"><b>1. Gyan Ganga </b><br>                 From previous: 0.00 km<br>                 <b>START</b></div>`)[0];
+                popup_75f306e6c21920cc37cead56a9b58302.setContent(html_40a0e2646c57bd68ffc0abec1946b5c2);
+            
+        
+
+        marker_68fe4d2968468a67cd53f614961f8d36.bindPopup(popup_75f306e6c21920cc37cead56a9b58302)
+        ;
+
+        
+    
+    
+                marker_68fe4d2968468a67cd53f614961f8d36.setIcon(icon_b7abfa8d8e211bfdf024506c648c328c);
+            
+    
+            var marker_81cf0c2f052b09fd21ddcaf7bbb56532 = L.marker(
+                [23.130691256817723, 79.88098490914587],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_adf48d6f07735d50841f06dc7d3c6460 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_910c591a882f5a67a318cc17582d1c8e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75717075fcc7e2e9fb98310b32efe500 = $(`<div id="html_75717075fcc7e2e9fb98310b32efe500" style="width: 100.0%; height: 100.0%;"><b>2. IT Park</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_910c591a882f5a67a318cc17582d1c8e.setContent(html_75717075fcc7e2e9fb98310b32efe500);
+            
+        
+
+        marker_81cf0c2f052b09fd21ddcaf7bbb56532.bindPopup(popup_910c591a882f5a67a318cc17582d1c8e)
+        ;
+
+        
+    
+    
+                marker_81cf0c2f052b09fd21ddcaf7bbb56532.setIcon(icon_adf48d6f07735d50841f06dc7d3c6460);
+            
+    
+            var marker_aa3e37d0f48ce7feb13f1f8c51a65aa1 = L.marker(
+                [23.12436219371275, 79.92711537185421],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_6f667e64426a0cbde03cdcc396321e82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64d7e4137237ce0b9f58090d77d27701 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb213e82f85920fe39185fc6ad78febd = $(`<div id="html_fb213e82f85920fe39185fc6ad78febd" style="width: 100.0%; height: 100.0%;"><b>3. South Avenue Mall</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_64d7e4137237ce0b9f58090d77d27701.setContent(html_fb213e82f85920fe39185fc6ad78febd);
+            
+        
+
+        marker_aa3e37d0f48ce7feb13f1f8c51a65aa1.bindPopup(popup_64d7e4137237ce0b9f58090d77d27701)
+        ;
+
+        
+    
+    
+                marker_aa3e37d0f48ce7feb13f1f8c51a65aa1.setIcon(icon_6f667e64426a0cbde03cdcc396321e82);
+            
+    
+            var marker_06f885b2fea108acb90b9b13fff9e42c = L.marker(
+                [23.10602802899691, 79.9308900895927],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_f0bcb07a50ec767370c7357263b54e37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_350e2bb89028122fa6d4ef962bc3f952 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c054a98f164785ad54b0b2038b7bc486 = $(`<div id="html_c054a98f164785ad54b0b2038b7bc486" style="width: 100.0%; height: 100.0%;"><b>4. Jilehri Ghat</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_350e2bb89028122fa6d4ef962bc3f952.setContent(html_c054a98f164785ad54b0b2038b7bc486);
+            
+        
+
+        marker_06f885b2fea108acb90b9b13fff9e42c.bindPopup(popup_350e2bb89028122fa6d4ef962bc3f952)
+        ;
+
+        
+    
+    
+                marker_06f885b2fea108acb90b9b13fff9e42c.setIcon(icon_f0bcb07a50ec767370c7357263b54e37);
+            
+    
+            var marker_f706fd44ebe9a1065d6e581b21b03d33 = L.marker(
+                [23.124141962403403, 79.9682864476029],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_e713c7fc937fbb22c4cfcb6ed7d8bfe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_862ef7f73a3981a2b3cf23dd84ad264a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b5bbcbf36af512897af935de26ae005 = $(`<div id="html_0b5bbcbf36af512897af935de26ae005" style="width: 100.0%; height: 100.0%;"><b>5. Vijan Mahal</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_862ef7f73a3981a2b3cf23dd84ad264a.setContent(html_0b5bbcbf36af512897af935de26ae005);
+            
+        
+
+        marker_f706fd44ebe9a1065d6e581b21b03d33.bindPopup(popup_862ef7f73a3981a2b3cf23dd84ad264a)
+        ;
+
+        
+    
+    
+                marker_f706fd44ebe9a1065d6e581b21b03d33.setIcon(icon_e713c7fc937fbb22c4cfcb6ed7d8bfe3);
+            
+    
+            var marker_0e041cd17185c63b1504a03de06b0d3f = L.marker(
+                [23.154927698696685, 79.94746407438113],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_0417e3f3f139fa7e2efd7d0ac48138ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c74e14c54faa33a65b273d30e881cf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87dbe76ce3a3512ad5e2075c10c57a5e = $(`<div id="html_87dbe76ce3a3512ad5e2075c10c57a5e" style="width: 100.0%; height: 100.0%;"><b>6. Taigor Garden</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_2c74e14c54faa33a65b273d30e881cf4.setContent(html_87dbe76ce3a3512ad5e2075c10c57a5e);
+            
+        
+
+        marker_0e041cd17185c63b1504a03de06b0d3f.bindPopup(popup_2c74e14c54faa33a65b273d30e881cf4)
+        ;
+
+        
+    
+    
+                marker_0e041cd17185c63b1504a03de06b0d3f.setIcon(icon_0417e3f3f139fa7e2efd7d0ac48138ef);
+            
+    
+            var marker_6ed6fd97cd4077cdd4c086a6c08c48ae = L.marker(
+                [23.147490024017742, 79.93669564088009],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_9029d66c55ce0512f582c84cdff55324 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab41ee14c9cd1443f26f50896d6190db = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8552db50d95e84ab380eb0830b584e01 = $(`<div id="html_8552db50d95e84ab380eb0830b584e01" style="width: 100.0%; height: 100.0%;"><b>7. Katanga</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_ab41ee14c9cd1443f26f50896d6190db.setContent(html_8552db50d95e84ab380eb0830b584e01);
+            
+        
+
+        marker_6ed6fd97cd4077cdd4c086a6c08c48ae.bindPopup(popup_ab41ee14c9cd1443f26f50896d6190db)
+        ;
+
+        
+    
+    
+                marker_6ed6fd97cd4077cdd4c086a6c08c48ae.setIcon(icon_9029d66c55ce0512f582c84cdff55324);
+            
+    
+            var marker_db4d981b3db1cd7dbd64f684a40a5b82 = L.marker(
+                [23.154417397847464, 79.93751060921963],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_3c4e1c38f51243f0e1530f9ed624dba7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c9eeb46b7ee9db5318fa0fd79daff50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ff970d1dd6fdf28931d7866d1cc206aa = $(`<div id="html_ff970d1dd6fdf28931d7866d1cc206aa" style="width: 100.0%; height: 100.0%;"><b>8. Bhandari Hospital</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_1c9eeb46b7ee9db5318fa0fd79daff50.setContent(html_ff970d1dd6fdf28931d7866d1cc206aa);
+            
+        
+
+        marker_db4d981b3db1cd7dbd64f684a40a5b82.bindPopup(popup_1c9eeb46b7ee9db5318fa0fd79daff50)
+        ;
+
+        
+    
+    
+                marker_db4d981b3db1cd7dbd64f684a40a5b82.setIcon(icon_3c4e1c38f51243f0e1530f9ed624dba7);
+            
+    
+            var marker_c3924fff6af85d80beaf96acab8c815c = L.marker(
+                [23.168089258333325, 79.92615686429417],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_11ee0c168da1c5a02a5396dddda56d67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f092136e20f315a31a11d1d78b819ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a80695af4ac784363ea81186e9bd4818 = $(`<div id="html_a80695af4ac784363ea81186e9bd4818" style="width: 100.0%; height: 100.0%;"><b>9. Vishal Mega Mart</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_0f092136e20f315a31a11d1d78b819ea.setContent(html_a80695af4ac784363ea81186e9bd4818);
+            
+        
+
+        marker_c3924fff6af85d80beaf96acab8c815c.bindPopup(popup_0f092136e20f315a31a11d1d78b819ea)
+        ;
+
+        
+    
+    
+                marker_c3924fff6af85d80beaf96acab8c815c.setIcon(icon_11ee0c168da1c5a02a5396dddda56d67);
+            
+    
+            var marker_6a61a9e36a48da06fccff6d64cd59e4d = L.marker(
+                [23.176772012175384, 79.94621370793112],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_8033b64e06a08bffd2659c5366ad05e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbd1b251f72b8186ee8b259ef956c15e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_711010ebbf876245c3d6323ed238ded8 = $(`<div id="html_711010ebbf876245c3d6323ed238ded8" style="width: 100.0%; height: 100.0%;"><b>10. Ghamapur</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_fbd1b251f72b8186ee8b259ef956c15e.setContent(html_711010ebbf876245c3d6323ed238ded8);
+            
+        
+
+        marker_6a61a9e36a48da06fccff6d64cd59e4d.bindPopup(popup_fbd1b251f72b8186ee8b259ef956c15e)
+        ;
+
+        
+    
+    
+                marker_6a61a9e36a48da06fccff6d64cd59e4d.setIcon(icon_8033b64e06a08bffd2659c5366ad05e8);
+            
+    
+            var marker_5973dd59ae2683b51e682184d9016e53 = L.marker(
+                [23.17921604273832, 79.96113034933958],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_585f162ae34590883578df834225778d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3459dd839f410727bd8f38bee4bedc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5219a042a9acc988526763007e490b6d = $(`<div id="html_5219a042a9acc988526763007e490b6d" style="width: 100.0%; height: 100.0%;"><b>11. Kanchghar</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_d3459dd839f410727bd8f38bee4bedc2.setContent(html_5219a042a9acc988526763007e490b6d);
+            
+        
+
+        marker_5973dd59ae2683b51e682184d9016e53.bindPopup(popup_d3459dd839f410727bd8f38bee4bedc2)
+        ;
+
+        
+    
+    
+                marker_5973dd59ae2683b51e682184d9016e53.setIcon(icon_585f162ae34590883578df834225778d);
+            
+    
+            var marker_3324f923b23983d36894cde7f2be2e1b = L.marker(
+                [23.182227402320635, 79.96992116752702],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_4c5f59703c24ea56f10163a9b8b2a0cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0dba24f384aeec579c7a47dc5e712e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8d0ddf08495ee8d4e427bd068ff7e75 = $(`<div id="html_d8d0ddf08495ee8d4e427bd068ff7e75" style="width: 100.0%; height: 100.0%;"><b>12. Satpula</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_e0dba24f384aeec579c7a47dc5e712e8.setContent(html_d8d0ddf08495ee8d4e427bd068ff7e75);
+            
+        
+
+        marker_3324f923b23983d36894cde7f2be2e1b.bindPopup(popup_e0dba24f384aeec579c7a47dc5e712e8)
+        ;
+
+        
+    
+    
+                marker_3324f923b23983d36894cde7f2be2e1b.setIcon(icon_4c5f59703c24ea56f10163a9b8b2a0cf);
+            
+    
+            var marker_41bd39dfb306bc45ccf9c35e2848c85c = L.marker(
+                [23.215416062799324, 79.96091639127673],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_020e51303df83ec0bedad4c451aa9de0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_397e1e0529779f61e88970e51b2a1cea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12ca5732094c432b174098288a585947 = $(`<div id="html_12ca5732094c432b174098288a585947" style="width: 100.0%; height: 100.0%;"><b>13. JNKVV</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_397e1e0529779f61e88970e51b2a1cea.setContent(html_12ca5732094c432b174098288a585947);
+            
+        
+
+        marker_41bd39dfb306bc45ccf9c35e2848c85c.bindPopup(popup_397e1e0529779f61e88970e51b2a1cea)
+        ;
+
+        
+    
+    
+                marker_41bd39dfb306bc45ccf9c35e2848c85c.setIcon(icon_020e51303df83ec0bedad4c451aa9de0);
+            
+    
+            var marker_dc02d7f7469c210d25d46c978536bee6 = L.marker(
+                [23.233261414367547, 79.96757010946145],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_cd5fd74ea4a6f8e5afef7cc581265442 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4add8323880bdb18f8fc598653b987b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c305af0226f796829bd8a7672ff96cc8 = $(`<div id="html_c305af0226f796829bd8a7672ff96cc8" style="width: 100.0%; height: 100.0%;"><b>14. Kharpatwar</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_b4add8323880bdb18f8fc598653b987b.setContent(html_c305af0226f796829bd8a7672ff96cc8);
+            
+        
+
+        marker_dc02d7f7469c210d25d46c978536bee6.bindPopup(popup_b4add8323880bdb18f8fc598653b987b)
+        ;
+
+        
+    
+    
+                marker_dc02d7f7469c210d25d46c978536bee6.setIcon(icon_cd5fd74ea4a6f8e5afef7cc581265442);
+            
+    
+            var marker_4a2d1d1b4fd215e87275c0266d7d79b3 = L.marker(
+                [23.221219560142476, 79.89696799909981],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_bec4d7ec78a17e301b126b3b81bd404c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3b77e371176b3683b10c6e4ef40bc8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_209a42fdd8623fddfce6284860ef4bb8 = $(`<div id="html_209a42fdd8623fddfce6284860ef4bb8" style="width: 100.0%; height: 100.0%;"><b>15. TATA motors SC</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_d3b77e371176b3683b10c6e4ef40bc8d.setContent(html_209a42fdd8623fddfce6284860ef4bb8);
+            
+        
+
+        marker_4a2d1d1b4fd215e87275c0266d7d79b3.bindPopup(popup_d3b77e371176b3683b10c6e4ef40bc8d)
+        ;
+
+        
+    
+    
+                marker_4a2d1d1b4fd215e87275c0266d7d79b3.setIcon(icon_bec4d7ec78a17e301b126b3b81bd404c);
+            
+    
+            var marker_44552840cf5a4d5a4eda97ba2a3a1431 = L.marker(
+                [23.20178346285742, 79.91282550434059],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_3e49e6129bb423bc738016a7cc3ec710 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ec5ffcf2fc56a5c4f43b61cada11dd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5388fc258303b60bcfda8c658541e37c = $(`<div id="html_5388fc258303b60bcfda8c658541e37c" style="width: 100.0%; height: 100.0%;"><b>16. Shri Ram College</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_0ec5ffcf2fc56a5c4f43b61cada11dd8.setContent(html_5388fc258303b60bcfda8c658541e37c);
+            
+        
+
+        marker_44552840cf5a4d5a4eda97ba2a3a1431.bindPopup(popup_0ec5ffcf2fc56a5c4f43b61cada11dd8)
+        ;
+
+        
+    
+    
+                marker_44552840cf5a4d5a4eda97ba2a3a1431.setIcon(icon_3e49e6129bb423bc738016a7cc3ec710);
+            
+    
+            var marker_71b5e28312ca01c8ba748ebf0f6716c3 = L.marker(
+                [23.189956346167065, 79.89816563482343],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_8c7a0216dae809ad58e0ae023fc9f9be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a26307a62b5b1f957dc5fae229fb808 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19f8572f35c42565370c045574d3f24f = $(`<div id="html_19f8572f35c42565370c045574d3f24f" style="width: 100.0%; height: 100.0%;"><b>17. Kachnar City</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_1a26307a62b5b1f957dc5fae229fb808.setContent(html_19f8572f35c42565370c045574d3f24f);
+            
+        
+
+        marker_71b5e28312ca01c8ba748ebf0f6716c3.bindPopup(popup_1a26307a62b5b1f957dc5fae229fb808)
+        ;
+
+        
+    
+    
+                marker_71b5e28312ca01c8ba748ebf0f6716c3.setIcon(icon_8c7a0216dae809ad58e0ae023fc9f9be);
+            
+    
+            var marker_9a8f2cbf7ea9902412f478e7b6b65686 = L.marker(
+                [23.20219982690002, 79.88304505674881],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_c84c4a742b7586d4b949217fc71f42bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffcc2ddfedbd9a06b3c5bae84ee71bb8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_47d28f727b9793990c496e5221d2b445 = $(`<div id="html_47d28f727b9793990c496e5221d2b445" style="width: 100.0%; height: 100.0%;"><b>18. Global College</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_ffcc2ddfedbd9a06b3c5bae84ee71bb8.setContent(html_47d28f727b9793990c496e5221d2b445);
+            
+        
+
+        marker_9a8f2cbf7ea9902412f478e7b6b65686.bindPopup(popup_ffcc2ddfedbd9a06b3c5bae84ee71bb8)
+        ;
+
+        
+    
+    
+                marker_9a8f2cbf7ea9902412f478e7b6b65686.setIcon(icon_c84c4a742b7586d4b949217fc71f42bb);
+            
+    
+            var marker_2b717d698f67c2ea256fed669188f262 = L.marker(
+                [23.156578080577397, 79.84123457172913],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_d3ac75795316424543d7f6cc3f920f47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e943020660c7706f7d621dcfd403369 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f9c99affadd07ef6c9af7987eda6c0eb = $(`<div id="html_f9c99affadd07ef6c9af7987eda6c0eb" style="width: 100.0%; height: 100.0%;"><b>19. Sea World</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_5e943020660c7706f7d621dcfd403369.setContent(html_f9c99affadd07ef6c9af7987eda6c0eb);
+            
+        
+
+        marker_2b717d698f67c2ea256fed669188f262.bindPopup(popup_5e943020660c7706f7d621dcfd403369)
+        ;
+
+        
+    
+    
+                marker_2b717d698f67c2ea256fed669188f262.setIcon(icon_d3ac75795316424543d7f6cc3f920f47);
+            
+    
+            var marker_038df4402bdc360c28dfc2eb6ab36a2e = L.marker(
+                [23.155569970495215, 79.87006914155117],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_1e3c7e85e139733a7f14beec574dc48c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abc8ea6c521315a4abae2e3571984313 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b17d4f2395128d6aa6d3cdcf0bc6758 = $(`<div id="html_6b17d4f2395128d6aa6d3cdcf0bc6758" style="width: 100.0%; height: 100.0%;"><b>20. Machaan</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_abc8ea6c521315a4abae2e3571984313.setContent(html_6b17d4f2395128d6aa6d3cdcf0bc6758);
+            
+        
+
+        marker_038df4402bdc360c28dfc2eb6ab36a2e.bindPopup(popup_abc8ea6c521315a4abae2e3571984313)
+        ;
+
+        
+    
+    
+                marker_038df4402bdc360c28dfc2eb6ab36a2e.setIcon(icon_1e3c7e85e139733a7f14beec574dc48c);
+            
+    
+            var marker_2704a470b19b79368452758cdf4d48d2 = L.marker(
+                [23.14797607411163, 79.88351430957519],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_f0fcff5d6cf52f16d476571c877de495 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c34339e7e0e2fe0a767c33259951cb5f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38eb98d37fffc5d2624d62e1271f2ff1 = $(`<div id="html_38eb98d37fffc5d2624d62e1271f2ff1" style="width: 100.0%; height: 100.0%;"><b>21. Apex Hospital</b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_c34339e7e0e2fe0a767c33259951cb5f.setContent(html_38eb98d37fffc5d2624d62e1271f2ff1);
+            
+        
+
+        marker_2704a470b19b79368452758cdf4d48d2.bindPopup(popup_c34339e7e0e2fe0a767c33259951cb5f)
+        ;
+
+        
+    
+    
+                marker_2704a470b19b79368452758cdf4d48d2.setIcon(icon_f0fcff5d6cf52f16d476571c877de495);
+            
+    
+            var marker_43e08f1d675cbdf452a3d237637fc272 = L.marker(
+                [23.129210544390933, 79.87486749562004],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var icon_e4f414205eb624ae22371d0bfd866a3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e3011ee6781009b983f6522d24415e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4ff1f7b029b7aac9c104e6c20723467 = $(`<div id="html_f4ff1f7b029b7aac9c104e6c20723467" style="width: 100.0%; height: 100.0%;"><b>22. Gyan Ganga </b><br>                 From previous: 0.00 km<br>                 </div>`)[0];
+                popup_5e3011ee6781009b983f6522d24415e4.setContent(html_f4ff1f7b029b7aac9c104e6c20723467);
+            
+        
+
+        marker_43e08f1d675cbdf452a3d237637fc272.bindPopup(popup_5e3011ee6781009b983f6522d24415e4)
+        ;
+
+        
+    
+    
+                marker_43e08f1d675cbdf452a3d237637fc272.setIcon(icon_e4f414205eb624ae22371d0bfd866a3b);
+            
+    
+            var marker_6a6b3f4e86d353a0e3a79c5f516302cd = L.marker(
+                [23.129210544390933, 79.87486749562004],
+                {
+}
+            ).addTo(map_4e657d6394417f042a5829c869ee4dde);
+        
+    
+            var div_icon_6675695900bdd7344affa6c6d0b46254 = L.divIcon({
+  "html": "\n    \u003cdiv style=\"font-size:14px;background:white;padding:8px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,0.2)\"\u003e\n        \u003cb\u003eTotal Distance:\u003c/b\u003e 58.10 km\u003cbr\u003e\n        \u003cb\u003eStops:\u003c/b\u003e 22\u003cbr\u003e\n        \u003cspan style=\"color:green\"\u003eShort hops (\u003c5km)\u003c/span\u003e | \n        \u003cspan style=\"color:orange\"\u003eMedium (5-10km)\u003c/span\u003e | \n        \u003cspan style=\"color:red\"\u003eLong (\u003e10km)\u003c/span\u003e\n    \u003c/div\u003e\n    ",
+  "className": "empty",
+});
+            marker_6a6b3f4e86d353a0e3a79c5f516302cd.setIcon(div_icon_6675695900bdd7344affa6c6d0b46254);
+        
+    
+                marker_6a6b3f4e86d353a0e3a79c5f516302cd.setIcon(div_icon_6675695900bdd7344affa6c6d0b46254);
+            
+</script>
+</html>

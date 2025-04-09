@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ee1fc7e066e5013e60d66d4d1357f80 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1ee1fc7e066e5013e60d66d4d1357f80" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1ee1fc7e066e5013e60d66d4d1357f80 = L.map(
+                "map_1ee1fc7e066e5013e60d66d4d1357f80",
+                {
+                    center: [23.152, 79.8958],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c887b6e4d73806ce4772d0d17780fa65 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c887b6e4d73806ce4772d0d17780fa65.addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var poly_line_53d34a6cf9b77237adeecb35da73ba0f = L.polyline(
+                [[23.152, 79.8958], [23.1235, 79.7862], [22.4673, 78.433], [22.938, 77.6129], [23.482, 77.737], [24.851, 79.9339], [23.2111, 80.0152], [23.1683, 79.9867], [23.1724, 79.9335], [23.152, 79.8958]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var marker_5f474eb8ecf5e0f9062cc482ee268362 = L.marker(
+                [23.152, 79.8958],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_d50cc6708782a78489149e2d726eb8d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bfc7a13a5e8faf1a9c3d0675a451bf6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82d9df4cfa583e8c553dd17fec5f0cde = $(`<div id="html_82d9df4cfa583e8c553dd17fec5f0cde" style="width: 100.0%; height: 100.0%;">1. Madan Mahal Fort</div>`)[0];
+                popup_bfc7a13a5e8faf1a9c3d0675a451bf6a.setContent(html_82d9df4cfa583e8c553dd17fec5f0cde);
+            
+        
+
+        marker_5f474eb8ecf5e0f9062cc482ee268362.bindPopup(popup_bfc7a13a5e8faf1a9c3d0675a451bf6a)
+        ;
+
+        
+    
+    
+                marker_5f474eb8ecf5e0f9062cc482ee268362.setIcon(icon_d50cc6708782a78489149e2d726eb8d3);
+            
+    
+            var marker_39167794134e5af570671012f85fc8c5 = L.marker(
+                [23.1235, 79.7862],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_bfe14a1a413ff8fc31d93a24b10425b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5983a23727d738568974350d7df4906 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af43cda30f1d5164de45c0d37535b7c3 = $(`<div id="html_af43cda30f1d5164de45c0d37535b7c3" style="width: 100.0%; height: 100.0%;">2. Bhedaghat</div>`)[0];
+                popup_f5983a23727d738568974350d7df4906.setContent(html_af43cda30f1d5164de45c0d37535b7c3);
+            
+        
+
+        marker_39167794134e5af570671012f85fc8c5.bindPopup(popup_f5983a23727d738568974350d7df4906)
+        ;
+
+        
+    
+    
+                marker_39167794134e5af570671012f85fc8c5.setIcon(icon_bfe14a1a413ff8fc31d93a24b10425b7);
+            
+    
+            var marker_1658761d903acf01de936915536853be = L.marker(
+                [22.4673, 78.433],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_075bdbd41831880e485cb49bc2f4c317 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_52382c4b3f8917374d93c244ed30c819 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e62f3a1b542fe545bf30004288258d67 = $(`<div id="html_e62f3a1b542fe545bf30004288258d67" style="width: 100.0%; height: 100.0%;">3. Pachmarhi</div>`)[0];
+                popup_52382c4b3f8917374d93c244ed30c819.setContent(html_e62f3a1b542fe545bf30004288258d67);
+            
+        
+
+        marker_1658761d903acf01de936915536853be.bindPopup(popup_52382c4b3f8917374d93c244ed30c819)
+        ;
+
+        
+    
+    
+                marker_1658761d903acf01de936915536853be.setIcon(icon_075bdbd41831880e485cb49bc2f4c317);
+            
+    
+            var marker_35d7a1fdec546fbfa4e9ccb9f857519d = L.marker(
+                [22.938, 77.6129],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_d7c920fb16043fa210ea8738feb47823 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_781ac3376654bff0145ccd79f4311d68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30a36e69b42d5aa8b211ac79a7bd9965 = $(`<div id="html_30a36e69b42d5aa8b211ac79a7bd9965" style="width: 100.0%; height: 100.0%;">4. Bhimbetka</div>`)[0];
+                popup_781ac3376654bff0145ccd79f4311d68.setContent(html_30a36e69b42d5aa8b211ac79a7bd9965);
+            
+        
+
+        marker_35d7a1fdec546fbfa4e9ccb9f857519d.bindPopup(popup_781ac3376654bff0145ccd79f4311d68)
+        ;
+
+        
+    
+    
+                marker_35d7a1fdec546fbfa4e9ccb9f857519d.setIcon(icon_d7c920fb16043fa210ea8738feb47823);
+            
+    
+            var marker_6cfbf4a46ad4db1be4a0ce7a3e70de6c = L.marker(
+                [23.482, 77.737],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_cf270b779dcfbb9ddaaed77f995ea35c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27c056e1e0d74ff2477de82b43477b7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c6450b6eeb542354f6c649599337ca3 = $(`<div id="html_4c6450b6eeb542354f6c649599337ca3" style="width: 100.0%; height: 100.0%;">5. Sanchi Stupa</div>`)[0];
+                popup_27c056e1e0d74ff2477de82b43477b7f.setContent(html_4c6450b6eeb542354f6c649599337ca3);
+            
+        
+
+        marker_6cfbf4a46ad4db1be4a0ce7a3e70de6c.bindPopup(popup_27c056e1e0d74ff2477de82b43477b7f)
+        ;
+
+        
+    
+    
+                marker_6cfbf4a46ad4db1be4a0ce7a3e70de6c.setIcon(icon_cf270b779dcfbb9ddaaed77f995ea35c);
+            
+    
+            var marker_eada8af7dcc89abc86bb43e054428a8c = L.marker(
+                [24.851, 79.9339],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_8597513b82579dc821dbe5cae0884d67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0147ec3db4179e5e672413a606abf412 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4910a903b374e833f4c072c68b2fb5ff = $(`<div id="html_4910a903b374e833f4c072c68b2fb5ff" style="width: 100.0%; height: 100.0%;">6. Khajuraho</div>`)[0];
+                popup_0147ec3db4179e5e672413a606abf412.setContent(html_4910a903b374e833f4c072c68b2fb5ff);
+            
+        
+
+        marker_eada8af7dcc89abc86bb43e054428a8c.bindPopup(popup_0147ec3db4179e5e672413a606abf412)
+        ;
+
+        
+    
+    
+                marker_eada8af7dcc89abc86bb43e054428a8c.setIcon(icon_8597513b82579dc821dbe5cae0884d67);
+            
+    
+            var marker_7f13f84024aeb28e58091fe11853abfc = L.marker(
+                [23.2111, 80.0152],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_864763da607dd6d098460ab29da9d0a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da3bb67f21306f972a5518eae584575a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9315709db9e2d1a387726c997e7cbea9 = $(`<div id="html_9315709db9e2d1a387726c997e7cbea9" style="width: 100.0%; height: 100.0%;">7. Dumna Reserve</div>`)[0];
+                popup_da3bb67f21306f972a5518eae584575a.setContent(html_9315709db9e2d1a387726c997e7cbea9);
+            
+        
+
+        marker_7f13f84024aeb28e58091fe11853abfc.bindPopup(popup_da3bb67f21306f972a5518eae584575a)
+        ;
+
+        
+    
+    
+                marker_7f13f84024aeb28e58091fe11853abfc.setIcon(icon_864763da607dd6d098460ab29da9d0a7);
+            
+    
+            var marker_06876b4d2420817d68f2a9f187601ace = L.marker(
+                [23.1683, 79.9867],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_d6a46df87d1e0179d79568919100fead = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_368d674fe52be09ec486e638287f634a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_050511b765f1082c4bebab729fe77961 = $(`<div id="html_050511b765f1082c4bebab729fe77961" style="width: 100.0%; height: 100.0%;">8. Kachnar City</div>`)[0];
+                popup_368d674fe52be09ec486e638287f634a.setContent(html_050511b765f1082c4bebab729fe77961);
+            
+        
+
+        marker_06876b4d2420817d68f2a9f187601ace.bindPopup(popup_368d674fe52be09ec486e638287f634a)
+        ;
+
+        
+    
+    
+                marker_06876b4d2420817d68f2a9f187601ace.setIcon(icon_d6a46df87d1e0179d79568919100fead);
+            
+    
+            var marker_a6ccdf82d501e4f641c83bf79296bb51 = L.marker(
+                [23.1724, 79.9335],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_71bcd00ea9a3222d5a7fa1d02f873111 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bf9339f8aa2dcf2aa1b7d3255596d53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fd98877d11affd5158f39b74e52a94e = $(`<div id="html_9fd98877d11affd5158f39b74e52a94e" style="width: 100.0%; height: 100.0%;">9. Rani Durgavati Museum</div>`)[0];
+                popup_1bf9339f8aa2dcf2aa1b7d3255596d53.setContent(html_9fd98877d11affd5158f39b74e52a94e);
+            
+        
+
+        marker_a6ccdf82d501e4f641c83bf79296bb51.bindPopup(popup_1bf9339f8aa2dcf2aa1b7d3255596d53)
+        ;
+
+        
+    
+    
+                marker_a6ccdf82d501e4f641c83bf79296bb51.setIcon(icon_71bcd00ea9a3222d5a7fa1d02f873111);
+            
+    
+            var marker_a6119be94cdcd4c6bc6fcb3af87b0080 = L.marker(
+                [23.152, 79.8958],
+                {
+}
+            ).addTo(map_1ee1fc7e066e5013e60d66d4d1357f80);
+        
+    
+            var icon_410112419f304180dfec3de0c804e03e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2222232dd270e151b320e4609711f34f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_faa065b74052d354ee952de88d5124fe = $(`<div id="html_faa065b74052d354ee952de88d5124fe" style="width: 100.0%; height: 100.0%;">10. Madan Mahal Fort</div>`)[0];
+                popup_2222232dd270e151b320e4609711f34f.setContent(html_faa065b74052d354ee952de88d5124fe);
+            
+        
+
+        marker_a6119be94cdcd4c6bc6fcb3af87b0080.bindPopup(popup_2222232dd270e151b320e4609711f34f)
+        ;
+
+        
+    
+    
+                marker_a6119be94cdcd4c6bc6fcb3af87b0080.setIcon(icon_410112419f304180dfec3de0c804e03e);
+            
+</script>
+</html>
