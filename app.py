@@ -101,34 +101,6 @@ def get_lat_lon(place):
         st.sidebar.error(f"Geocoding error: {str(e)}")
         return None, None
     
-# def get_lat_lon(place):
-#     if not place or not place.strip():
-#         st.sidebar.error("❌ Place name is empty. Please enter a valid name.")
-#         return None, None
-
-#     try:
-#         google_maps_api_key = "AIzaSyDS9KN6zMQEF9x-8ZheiRQywgSzEbQVjCI"  # Replace with your actual API key
-#         gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json"
-#         params = {
-#             'address': f"{place}, Jabalpur, India",
-#             'key': google_maps_api_key
-#         }
-
-#         response = requests.get(gmaps_url, params=params)
-#         data = response.json()
-
-#         if response.ok and data["status"] == "OK" and data["results"]:
-#             location = data["results"][0]["geometry"]["location"]
-#             return location["lat"], location["lng"]
-#         else:
-#             st.sidebar.error(f"❌ Geocoding failed: {data.get('error_message', 'No results found')}")
-#             return None, None
-
-#     except Exception as e:
-#         st.sidebar.error(f"Geocoding error: {str(e)}")
-#         return None, None
-
-# Tab layout for single vs multiple input
 tab1, tab2 = st.sidebar.tabs(["Single Location", "Multiple Locations"])
 
 # Single location input
