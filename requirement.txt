@@ -3,3 +3,5 @@ geopy
 ortools
 webbrowser
 geopy
+streamlit
+geopy
